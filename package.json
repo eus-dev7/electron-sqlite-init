@@ -1,0 +1,24 @@
+{
+  "name": "electron-sqlite-init",
+  "productName": "ElectronJS-SQLite",
+  "description": "Electron manage data base sqlite",
+  "version": "1.0.0",
+  "author": "eus-Ghost",
+  "copyright": "eus-2020",
+  "main": "app/app.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager .  --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Rural electrification\"",
+    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds"
+  },
+  "dependencies": {
+    "sqlite3": "^4.0.9"
+  },
+  "devDependencies": {
+    "angular-chart.js": "^1.1.1",
+    "electron": "^5.0.13",
+    "electron-builder": "^21.0.15",
+    "zingchart-angularjs": "^1.2.0"
+  }
+}
